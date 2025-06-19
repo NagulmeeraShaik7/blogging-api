@@ -5,7 +5,7 @@ const router = express.Router();
 
 /**
  * @swagger
- * /users:
+ * api/users:
  *   post:
  *     summary: Create a new user
  *     tags: [Users]
@@ -64,7 +64,7 @@ router.post('/', createUser);
 
 /**
  * @swagger
- * /users/{id}:
+ * api/users/{id}:
  *   get:
  *     summary: Get a user by ID
  *     tags: [Users]

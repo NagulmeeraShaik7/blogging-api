@@ -5,7 +5,7 @@ const router = express.Router();
 
 /**
  * @swagger
- * /comments:
+ * api/comments:
  *   post:
  *     summary: Create a new comment
  *     tags: [Comments]
@@ -65,7 +65,7 @@ router.post('/', createComment);
 
 /**
  * @swagger
- * /comments/blog/{blogId}:
+ * api/comments/blog/{blogId}:
  *   get:
  *     summary: Retrieve all comments for a specific blog
  *     tags: [Comments]

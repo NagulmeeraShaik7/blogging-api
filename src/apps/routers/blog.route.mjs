@@ -5,7 +5,7 @@ const router = express.Router();
 
 /**
  * @swagger
- * /blogs:
+ * api/blogs:
  *   post:
  *     summary: Create a new blog
  *     tags: [Blogs]
@@ -65,7 +65,7 @@ router.post('/', createBlog);
 
 /**
  * @swagger
- * /blogs:
+ * api/blogs:
  *   get:
  *     summary: Retrieve all blogs
  *     tags: [Blogs]
@@ -105,7 +105,7 @@ router.get('/', getAllBlogs);
 
 /**
  * @swagger
- * /blogs/{id}:
+ * api/blogs/{id}:
  *   get:
  *     summary: Retrieve a blog by ID
  *     tags: [Blogs]
