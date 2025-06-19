@@ -2,6 +2,10 @@
 
 A RESTful API for a blogging platform built with Node.js, Express, and MongoDB.
 
+🌐 **Deployed URL:** [https://blogging-api-2000.onrender.com](https://blogging-api-2000.onrender.com)
+
+---
+
 ## Setup Instructions
 
 1. **Clone the repository:**
@@ -34,6 +38,16 @@ A RESTful API for a blogging platform built with Node.js, Express, and MongoDB.
    ```bash
    npm run dev
    ```
+
+---
+
+## API Base URL
+
+Use this as the base for all your API requests:
+
+```
+https://blogging-api-2000.onrender.com/api
+```
 
 ---
 
@@ -166,17 +180,17 @@ A RESTful API for a blogging platform built with Node.js, Express, and MongoDB.
 
 ## Sample Data
 
-To populate the database with sample data, you can use the following `curl` commands:
+To populate the database with sample data using your deployed API, use these `curl` commands:
 
 ```bash
 # Create a user
-curl -X POST http://localhost:3000/api/users -H "Content-Type: application/json" -d '{"username":"john_doe","email":"john@example.com","password":"password123"}'
+curl -X POST https://blogging-api-2000.onrender.com/api/users -H "Content-Type: application/json" -d '{"username":"john_doe","email":"john@example.com","password":"password123"}'
 
 # Create a blog
-curl -X POST http://localhost:3000/api/blogs -H "Content-Type: application/json" -d '{"title":"My First Blog","content":"This is my first blog post","author":"userId"}'
+curl -X POST https://blogging-api-2000.onrender.com/api/blogs -H "Content-Type: application/json" -d '{"title":"My First Blog","content":"This is my first blog post","author":"userId"}'
 
 # Create a comment
-curl -X POST http://localhost:3000/api/comments -H "Content-Type: application/json" -d '{"content":"Great post!","author":"userId","blog":"blogId"}'
+curl -X POST https://blogging-api-2000.onrender.com/api/comments -H "Content-Type: application/json" -d '{"content":"Great post!","author":"userId","blog":"blogId"}'
 ```
 
 ---
