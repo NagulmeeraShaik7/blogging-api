@@ -9,8 +9,12 @@ const swaggerDefinition = {
   },
   servers: [
     {
-      url: 'http://localhost:3000',
+      url: 'http://localhost:3000/api/',
       description: 'Development server',
+    },
+    {
+      url: 'https://blogging-api-2000.onrender.com/api/',
+      description: 'Production server',
     },
   ],
   components: {
